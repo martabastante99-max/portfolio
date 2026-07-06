@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Silverway Signal Tracker · Marta Nuñez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <nav>
+    <span class="nav-logo">MN<span class="accent">.</span></span>
+    <ul>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+      <li><a href="../assets/CV_Marta_Nunez.pdf" class="btn-nav" target="_blank">Download CV</a></li>
+    </ul>
+  </nav>
+
+  <div class="detail-nav">
+    <a href="../index.html">Home</a> / <span>Silverway Signal Tracker</span>
+  </div>
+
+  <div class="detail-hero">
+    <span class="project-tag mono">Python · REST APIs · GitHub Actions · Email Automation</span>
+    <h1>Silverway Signal Tracker</h1>
+    <p>A self-built system that scores the top 200 global tech companies every day and delivers a ranked report straight to my inbox — before the market opens.</p>
+  </div>
+
+  <div class="detail-body">
+    <div class="metrics-row">
+      <div class="metric-box"><span class="val">200</span><span class="lbl">Companies tracked</span></div>
+      <div class="metric-box"><span class="val">8</span><span class="lbl">Scoring parameters</span></div>
+      <div class="metric-box"><span class="val">Daily</span><span class="lbl">Automated run</span></div>
+      <div class="metric-box"><span class="val">4+</span><span class="lbl">Free public APIs</span></div>
+    </div>
+
+    <h2>What it does</h2>
+    <p>Every morning, a GitHub Actions workflow triggers a Python script that pulls data on the top 200 tech and software companies globally by market cap. It scores each one across eight parameters and ranks them in a single list delivered by email.</p>
+
+    <h2>Signals used</h2>
+    <p><strong>Alternative (community momentum):</strong></p>
+    <ul>
+      <li><strong>GitHub stars</strong> — developers bookmark tools they actually use. 50k+ stars takes years to build.</li>
+      <li><strong>Google Trends (7 days)</strong> — rising public interest before it shows up in coverage or price.</li>
+      <li><strong>Hacker News (7 days)</strong> — the most senior tech community in the world: engineers, founders, CTOs.</li>
+      <li><strong>Wikipedia pageviews (7 days)</strong> — when investors and journalists are researching a company, this spikes.</li>
+    </ul>
+    <p><strong>Valuation fundamentals:</strong> P/E ratio, 5-year revenue growth, ROA, Debt/Equity.</p>
+
+    <h2>Key findings (May 28, 2026)</h2>
+    <p>The highest score was 66%, suggesting the market is generally fairly priced across tech. Standout picks for further investigation: NVDA, ADBE, SMCI, SAP, and KSPI.</p>
+
+    <h2>What I learned — and what I'd improve</h2>
+    <p>Google Trends returned errors for ~60% of companies, distorting the rankings. I documented this limitation clearly. Planned improvements:</p>
+    <ul>
+      <li>Weight scores differently by company type (mature vs. growth)</li>
+      <li>Use multiple APIs per parameter and average them</li>
+      <li>Replace yfinance with a more reliable financial data source</li>
+      <li>Segment results by market cap so large and small caps don't compete on the same scale</li>
+    </ul>
+
+    <br>
+    <a href="../index.html" class="btn-ghost">← Back to portfolio</a>
+  </div>
+</body>
+</html>
