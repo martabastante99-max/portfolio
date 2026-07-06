@@ -915,3 +915,11 @@ footer {
     height: 70px;
   }
 }
+
+/* ============================================================
+   STORY — NO PHOTO VERSION
+   ============================================================ */
+.story-no-photo {
+  grid-template-columns: 1fr !important;
+  max-width: 760px;
+}
